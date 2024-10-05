@@ -1,0 +1,30 @@
+# Start of Selection
+# Mengaktifkan mod_rewrite
+RewriteEngine On
+
+# Menghilangkan ekstensi .php dari URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [L]
+
+# Redirect dari URL dengan .php ke URL tanpa .php
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Menangani error 404 Not Found
+ErrorDocument 404 /404.php
+
+# Menangani error 403 Forbidden
+ErrorDocument 403 /403.php
+
+# Menangani error 500 Internal Server Error dengan 404
+ErrorDocument 500 /404.php
+
+# Mencegah akses langsung ke folder tertentu
+# Jika Anda ingin mencegah akses, gunakan .htaccess di dalam direktori tersebut
+# Misalnya, buat .htaccess di /master dengan konten berikut:
+# Order Deny,Allow
+# Deny from all
+
+# Akhiri dengan baris kosong
+# End of Selection

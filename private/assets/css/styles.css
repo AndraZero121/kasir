@@ -1,0 +1,173 @@
+/* CSS tetap sama */
+body {
+  background-color: #f7fafc;
+  /* Light gray background */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.category-button {
+  transition: all 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.category-button:hover {
+  transform: scale(1.05);
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: #2d3748;
+  /* Dark gray for the sidebar */
+  padding-top: 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+  margin-top: 2rem;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar ul li {
+  width: 100%;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  width: 100%;
+  color: #a0aec0;
+  font-size: 1.125rem;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #4a5568;
+  color: #fff;
+  transform: translateX(5px);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+  /* Ensure uniform product card height */
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  /* White background */
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  border: 1px solid #63b3ed;
+  /* Border on hover */
+}
+
+.product-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  /* Fixed height for image */
+  border-radius: 0.5rem;
+  /* Rounded corners */
+}
+
+.product-price {
+  color: #2b6cb0;
+  /* Blue color for price */
+  font-weight: 700;
+  /* Bold for emphasis */
+  font-size: 1.2rem;
+  /* Font size for price */
+}
+
+.product-stock {
+  color: red;
+  /* Red color for out of stock */
+}
+
+.flex-grow {
+  margin-top: 20px;
+  /* Memberikan jarak antara kategori button dan produk */
+}
+
+.order-detail {
+  margin-top: 20px;
+  /* Memberikan jarak atas untuk order detail */
+  padding: 1rem;
+  /* Penambahan padding untuk estetik */
+  background-color: #fff;
+  /* White background for order details */
+  border-radius: 0.5rem;
+  /* Rounded corners */
+  padding: 1rem;
+  /* Increased padding for better spacing */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  /* Add scrollbar if needed */
+  max-height: 1000px;
+  /* Set a maximum height */
+  transition: all 0.3s;
+  /* Transition effect */
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-button {
+  cursor: pointer;
+  background-color: #63b3ed;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+  transition: background-color 0.3s;
+  /* Transition effect */
+}
+
+.quantity-button:hover {
+  background-color: #3182ce;
+  /* Darker blue on hover */
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  /* Disable clicking */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.total-price {
+  font-size: 1.5rem;
+  /* Larger font for total price */
+  font-weight: bold;
+  color: #2b6cb0;
+  /* Color for total */
+}
