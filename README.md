@@ -1,1 +1,1 @@
-# Kasir
+Ini adalah web kasirku.
