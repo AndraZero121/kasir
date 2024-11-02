@@ -22,4 +22,4 @@ Ikuti langkah-langkah berikut untuk menginstal dan menjalankan proyek ini:
 
 1. Clone repositori ini:
    
-   git clone https://github.com/username/nama-repo.git
+   git clone https://github.com/AndraZero121/kasir.git
